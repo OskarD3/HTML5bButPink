@@ -113,13 +113,13 @@ let searchParams = new URLSearchParams(window.location.href);
 let [levelId, levelpackId] = [searchParams.get("https://coppersalts.github.io/HTML5b/?level"), searchParams.get("https://coppersalts.github.io/HTML5b/?levelpack")]
 const difficultyMap = [
 	["Unknown", "#e6e6e6"],
-	["Easy", "#85ff85"],
-	["Normal", "#ffff00"],
-	["Difficult", "#ffab1a"],
+	["Easy", "#b9f542"],
+	["Normal", "#e6f542"],
+	["Difficult", "#f57842"],
 	["Hard", "#ff7070"],
-	["Extreme", "#ff66d6"],
-	["Insane", "#eca2de"],
-	["Impossible", "#3d0000"],
+	["Extreme", "#ff294d"],
+	["Insane", "#ff00bf"],
+	["Impossible", "#00ffb7"],
 ];
 
 function clearVars() {
