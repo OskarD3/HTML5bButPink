@@ -6115,7 +6115,7 @@ function drawLCChars() {
 				char[i].setFrame(char[i].dire);
 			}
 			if(char[i].motionString[section + 2]==2){
-				char[i].dire = 2;
+				char[i].dire = 3;
 				char[i].setFrame(char[i].dire);
 			}
 			char[i].px = char[i].x;
