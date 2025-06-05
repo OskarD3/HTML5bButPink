@@ -6106,10 +6106,16 @@ function drawLCChars() {
 			}
 			osctx5.globalAlpha = 1;
 		}
-		if (char[i].placed && (char[i].charState == 3 || char[i].charState == 4)) {
+		if (char[i].placed && (char[i].charState == 3 || char[i].charState == 4)) { // HELLO HELLOOOO
 			let section = Math.floor(levelTimer / char[i].speed) % (char[i].motionString.length - 2);
 			char[i].vx = cardinal[char[i].motionString[section + 2]][0] * (30 / char[i].speed);
 			char[i].vy = cardinal[char[i].motionString[section + 2]][1] * (30 / char[i].speed);
+			if(char[i].motionString[section + 2]==3){
+				char[i].dire = 4;
+			}
+			if(char[i].motionString[section + 2]==2){
+				char[i].dire = 2;
+			}
 			char[i].px = char[i].x;
 			char[i].py = char[i].y;
 			char[i].charMove();
