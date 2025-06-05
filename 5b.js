@@ -6111,7 +6111,7 @@ function drawLCChars() {
 			char[i].vx = cardinal[char[i].motionString[section + 2]][0] * (30 / char[i].speed);
 			char[i].vy = cardinal[char[i].motionString[section + 2]][1] * (30 / char[i].speed);
 			if(char[i].motionString[section + 2]==3){
-				char[i].dire = 4;
+				char[i].dire = 1;
 				char[i].setFrame(char[i].dire);
 			}
 			if(char[i].motionString[section + 2]==2){
@@ -7898,7 +7898,7 @@ function draw() {
 					char[i].vx = cardinal[char[i].motionString[section + 2]][0] * (30 / char[i].speed);
 					char[i].vy = cardinal[char[i].motionString[section + 2]][1] * (30 / char[i].speed);
 					if(char[i].motionString[section + 2]==3){
-						char[i].dire = 4;
+						char[i].dire = 1;
 						char[i].setFrame(char[i].dire);
 					}
 					if(char[i].motionString[section + 2]==2){
