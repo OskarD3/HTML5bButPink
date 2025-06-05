@@ -7897,6 +7897,14 @@ function draw() {
 					let section = Math.floor(levelTimer / char[i].speed) % (char[i].motionString.length - 2);
 					char[i].vx = cardinal[char[i].motionString[section + 2]][0] * (30 / char[i].speed);
 					char[i].vy = cardinal[char[i].motionString[section + 2]][1] * (30 / char[i].speed);
+					if(char[i].motionString[section + 2]==3){
+						char[i].dire = 4;
+						char[i].setFrame(8);
+					}
+					if(char[i].motionString[section + 2]==2){
+						char[i].dire = 2;
+						char[i].setFrame(8);
+					}
 					char[i].px = char[i].x;
 					char[i].py = char[i].y;
 					char[i].charMove();
